@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment - Bloom Garden</title>
+<link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+
+<section class="payment">
+
+    <!-- PAYMENT FORM -->
+    <div class="pay-form">
+        <h2>Payment Method</h2>
+
+        <label><input type="radio" name="pay" checked> UPI</label>
+        <label><input type="radio" name="pay"> Credit/Debit Card</label>
+        <label><input type="radio" name="pay"> Cash on Delivery</label>
+
+        <div class="upi-box">
+            <input type="text" placeholder="Enter UPI ID (e.g. name@upi)">
+        </div>
+
+        <div class="card-box">
+            <input type="text" placeholder="Card Number">
+            <input type="text" placeholder="Expiry Date">
+            <input type="text" placeholder="CVV">
+        </div>
+
+        <button onclick="payNow()">Pay Now</button>
+    </div>
+
+    <!-- ORDER SUMMARY -->
+    <div class="summary">
+        <h2>Order Summary</h2>
+        <p id="product"></p>
+        <p id="price"></p>
+        <hr>
+        <h3 id="total"></h3>
+    </div>
+
+</section>
+
+<footer>
+      <div class="my-footer">
+        <li> <i class='bx bxl-instagram'></i>  flower_in_</li>
+        <li><i class='bx bxs-envelope'></i>  flower100@gmail.com</li>
+    </div>
+    <p>© 2026 Bloom Garden</p>
+</footer>
+
+<script>
+let product = localStorage.getItem("product");
+let price = localStorage.getItem("price");
+
+document.getElementById("product").innerText = "Product: " + product;
+document.getElementById("price").innerText = "Price: ₹" + price;
+document.getElementById("total").innerText = "Total: ₹" + price;
+
+function payNow() {
+    alert("Payment Successful 🎉");
+    window.location.href = "Final.html";
+}
+</script>
+
+</body>
+</html>

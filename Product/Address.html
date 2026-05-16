@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout - Bloom Garden</title>
+<link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+
+
+
+<section class="checkout">
+
+    <!-- ADDRESS FORM -->
+    <div class="form">
+        <h2>Shipping Address</h2>
+
+        <input type="text" placeholder="Full Name" required>
+        <input type="text" placeholder="Phone Number" required>
+        <input type="text" placeholder="Address Line" required>
+        <input type="text" placeholder="City" required>
+        <input type="text" placeholder="State" required>
+        <input type="text" placeholder="Pincode" required>
+
+        <button onclick="placeOrder()"><a href="/Product/Payment.html">Place Order</a></button>
+    </div>
+
+    <!-- ORDER SUMMARY -->
+    <div class="summary">
+        <h2>Order Summary</h2>
+        <p id="productName"></p>
+        <p id="productPrice"></p>
+        <hr>
+        <h3 id="total"></h3>
+    </div>
+
+</section>
+
+<footer>
+      <div class="my-footer">
+        <li> <i class='bx bxl-instagram'></i>  flower_in_</li>
+        <li><i class='bx bxs-envelope'></i>  flower100@gmail.com</li>
+    </div>
+    <p>© 2026 Bloom Garden</p>
+</footer>
+
+<script>
+let product = localStorage.getItem("product");
+let price = localStorage.getItem("price");
+
+document.getElementById("productName").innerText = "Product: " + product;
+document.getElementById("productPrice").innerText = "Price: ₹" + price;
+document.getElementById("total").innerText = "Total: ₹" + price;
+
+</script>
+
+</body>
+</html>

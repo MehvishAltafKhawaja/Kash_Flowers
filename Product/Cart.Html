@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/style.css">
+     <link rel="stylesheet" href="product.css">
+    <title>Cart</title>
+     <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+       }
+    </style>
+</head>
+<body>
+      <header class="navbar">
+       <div class="logo"><img src="/Images/macedonia.png" /></div>
+
+       <nav>
+          <ul class="nav-links" id="nav-links">
+              <li><a href="/Index.html">Home</a></li>
+              <li><a href="/Product/Cart.Html">Products</a></li>
+              <li><a href="/APP/AboutUs.html">About Us</a></li>
+              <li><a href="/APP/ContactUs.html">Contact Us</a></li>
+              <li><a href="/Users/Login.html" id="active">Login</a></li>
+              <li><a href="/Users/Resgister.html" class="register-btn">Register</a></li>
+          </ul>
+      </nav>
+   </header>
+
+<!-- PAGE TITLE -->
+<section class="page-title">
+    <h1>Our Flowers Collection</h1>
+</section>
+
+<!-- FILTER BUTTONS -->
+<section class="filters">
+    <button>All</button>
+    <button>Roses</button>
+    <button>Tulips</button>
+    <button>Lilies</button>
+    <button>Special</button>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products">
+    <div class="product-grid">
+
+        <div class="card">
+            <img src="/Images/flower10.jpg">
+            <h3>Red Roses</h3>
+            <p>₹499</p>
+            <button onclick="buyNow('Red Roses', 499)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="/Images/flower12.jpg">
+            <h3>Tulip Bouquet</h3>
+            <p>₹699</p>
+            <button onclick="buyNow('Red Roses', 499)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="/Images/flower9.jpg">
+            <h3>Sunflower Pack</h3>
+            <p>₹399</p>
+            <button onclick="buyNow('Red Roses', 499)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="/Images/flower7.jpg">
+            <h3>White Lily</h3>
+            <p>₹599</p>
+            <button onclick="buyNow('Red Roses', 499)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="/Images/flower3.jpg">
+            <h3>Pink Roses</h3>
+            <p>₹549</p>
+            <button onclick="buyNow('Red Roses', 499)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="/Images/flower2.jpg">
+            <h3>Mixed Bouquet</h3>
+            <p>₹799</p>
+            <button onclick="buyNow('Red Roses', 499)">Add to Cart</button>
+        </div>
+
+               <div class="card">
+            <img src="/Images/flower1.jpg">
+            <h3>Pink Roses</h3>
+            <p>₹549</p>
+            <button onclick="buyNow('Red Roses', 499)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="/Images/flower4.jpg">
+            <h3>Mixed Bouquet</h3>
+            <p>₹799</p>
+            <button onclick="buyNow('Red Roses', 499)">Add to Cart</button>
+        </div>
+
+               <div class="card">
+            <img src="/Images/flower5.jpg">
+            <h3>Pink Roses</h3>
+            <p>₹549</p>
+            <button onclick="buyNow('Red Roses', 499)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="/Images/flower6.jpg">
+            <h3>Mixed Bouquet</h3>
+            <p>₹799</p>
+            <button onclick="buyNow('Red Roses', 499)">Add to Cart</button>
+        </div>
+
+               <div class="card">
+            <img src="/Images/flower7.jpg">
+            <h3>Pink Roses</h3>
+            <p>₹549</p>
+            <button onclick="buyNow('Red Roses', 499)" >Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="/Images/flower8.jpg">
+            <h3>Mixed Bouquet</h3>
+            <p>₹799</p>
+            <button onclick="buyNow('Red Roses', 499)">Add to Cart</button>
+        </div>
+
+               <div class="card">
+            <img src="/Images/flower9.jpg">
+            <h3>Pink Roses</h3>
+            <p>₹549</p>
+            <button onclick="buyNow('Red Roses', 499)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="/Images/flower10.jpg">
+            <h3>Mixed Bouquet</h3>
+            <p>₹799</p>
+            <button onclick="buyNow('Red Roses', 499)">Add to Cart</button>
+        </div>
+
+               <div class="card">
+            <img src="/Images/flower11.jpg">
+            <h3>Pink Roses</h3>
+            <p>₹549</p>
+            <button onclick="buyNow('Red Roses', 499)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="/Images/flower12.jpg">
+            <h3>Mixed Bouquet</h3>
+            <p>₹799</p>
+            <button onclick="buyNow('Red Roses', 499)">Add to Cart</button>
+        </div>
+
+               <div class="card">
+            <img src="/Images/flower10.jpg">
+            <h3>Pink Roses</h3>
+            <p>₹549</p>
+            <button onclick="buyNow('Red Roses', 499)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="/Images/flower7.jpg">
+            <h3>Mixed Bouquet</h3>
+            <p>₹799</p>
+            <button onclick="buyNow('Red Roses', 499)">Add to Cart</button>
+        </div>
+
+               <div class="card">
+            <img src="/Images/flower8.jpg">
+            <h3>Pink Roses</h3>
+            <p>₹549</p>
+            <button onclick="buyNow('Red Roses', 499)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="/Images/flower9.jpg">
+            <h3>Mixed Bouquet</h3>
+            <p>₹799</p>
+            <button onclick="buyNow('Red Roses', 499)">Add to Cart</button>
+        </div>
+
+               <div class="card">
+            <img src="/Images/flower10.jpg">
+            <h3>Pink Roses</h3>
+            <p>₹549</p>
+            <button onclick="buyNow('Red Roses', 499)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="/Images/flower1.jpg">
+            <h3>Mixed Bouquet</h3>
+            <p>₹799</p>
+            <button onclick="buyNow('Red Roses', 499)">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+      <div class="my-footer">
+        <li> <i class='bx bxl-instagram'></i>  flower_in_</li>
+        <li><i class='bx bxs-envelope'></i>  flower100@gmail.com</li>
+    </div>
+    <p>© 2026 Bloom Garden</p>
+</footer>
+<script>
+function buyNow(product, price) {
+    localStorage.setItem("product", product);
+    localStorage.setItem("price", price);
+    window.location.href = "Address.html";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="user.css"/>
+        <link rel="stylesheet" href="/style.css"/>
+    <title>Register</title>
+     <style>
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+       }
+    </style>
+</head>
+<body >
+
+     <header class="navbar">
+      <div class="logo"><img src="/Images/macedonia.png" /></div>
+
+       <nav>
+          <ul class="nav-links" id="nav-links">
+              <li><a href="/Index.html">Home</a></li>
+              <li><a href="/Product/Cart.Html">Products</a></li>
+              <li><a href="/APP/AboutUs.html">About Us</a></li>
+              <li><a href="/APP/ContactUs.html">Contact Us</a></li>
+              <li><a href="Login.html" id="active">Login</a></li>
+              <li><a href="Resgister.html" class="register-btn">Register</a></li>
+          </ul>
+      </nav>
+   </header>
+<div class="reg-body">
+    <div class="Registe"> <!-- same container style -->
+        <form class="reg-form">
+            <h1>Register</h1>
+
+            <div class="input-box">
+                <input type="text" placeholder="First Name" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="text" placeholder="Last Name" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="email" placeholder="Email" required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+
+             <div class="input-box">
+                <input type="password" placeholder="Password" required
+                       pattern="^(?=.*[A-Z])(?=.*[0-9])(?=.*[\W_]).{10,}$"
+                       title="Password must be at least 10 characters long, include 1 uppercase letter, 1 number, and 1 special character"
+                >
+                <i class='bx bxs-lock'></i>
+             </div>
+            
+            <div class="input-box">
+                <input type="number" placeholder="Contact Number" required>
+                <i class='bx bxs-phone'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="date" placeholder="Age" required>
+                <!-- <i class='bx bxs-calendar'></i> -->
+            </div>
+
+            <div class="remember-box">
+                <label><input type="checkbox"> Remember Me</label>
+            </div>
+
+            <button type="submit" class="btn1"><a class="btn-a" href="thanks.html"> Register</a></button>
+
+            <div class="register-btn1">
+                <br/>
+                <p>Already have an account? <a href="Login.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

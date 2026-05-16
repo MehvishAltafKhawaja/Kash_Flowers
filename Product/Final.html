@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Successful</title>
+<link rel="stylesheet" href="Final.css">
+</head>
+
+<body>
+
+<div class="success-container">
+
+    <div class="card">
+        <div class="checkmark">✔</div>
+
+        <h1>Payment Successful</h1>
+        <p>Your order has been placed successfully 🌸</p>
+
+        <div class="details">
+            <p id="product"></p>
+            <p id="price"></p>
+        </div>
+
+        <div class="buttons">
+            <a href="/Index.html">Go Home</a>
+            <a href="Cart.Html">Shop More</a>
+        </div>
+    </div>
+
+</div>
+
+<script>
+let product = localStorage.getItem("product");
+let price = localStorage.getItem("price");
+
+document.getElementById("product").innerText = "Product: " + product;
+document.getElementById("price").innerText = "Total Paid: ₹" + price;
+</script>
+
+</body>
+</html>

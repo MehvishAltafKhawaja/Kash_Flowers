@@ -1,0 +1,175 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid rgb(188, 42, 42);
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(188, 42, 42);
+}
+.logo img {
+    height: 50px;     /* adjust size here */
+    width: auto;
+    object-fit: contain;
+}
+
+/* Nav Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: rgb(188, 42, 42);
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.nav-links li a:hover {
+    color: #000;
+}
+
+/* Active Link */
+#active {
+    background: rgb(188, 42, 42);;
+    color: #fffbfb !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+    
+}
+#active:hover{ 
+     background: #ddd;
+     color: #000 !important;
+}
+/* Register Button */
+.register-btn {
+    background: rgb(188, 42, 42);;
+    color: #fffbfb !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+.register-btn:hover {
+    background: #ddd;
+    color: #000 !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HERO */
+.hero {
+    height: 80vh;
+    background: url('https://source.unsplash.com/1600x900/?flowers') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-text {
+    background: rgba(0,0,0,0.5);
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    margin: 10px 0;
+}
+
+.hero button {
+    padding: 10px 20px;
+    border: none;
+    background: #e91e63;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.hero button a {
+    padding: 10px 20px;
+    border: none;
+    background: #e91e63;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero button:hover {
+    background: #c2185b;
+}
+
+/* PRODUCTS */
+.products {
+    padding: 50px;
+    text-align: center;
+}
+
+.products h2 {
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+/* ABOUT */
+.about {
+    padding: 50px;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+footer .my-footer{
+    text-align: left;
+    margin-left: 5%;
+}
+
+
